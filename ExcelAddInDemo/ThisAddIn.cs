@@ -13,7 +13,7 @@ namespace ExcelAddInDemo
         private void ThisAddIn_Startup(object sender, EventArgs e)
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            var filePath = new FileInfo("Employee.xlsx");
+            var filePath = new FileInfo("C:\\Users\\Kalina Aleksandrova\\Documents\\EmployeeData.xlsx");
 
             if (File.Exists(filePath.FullName))
                 File.Delete(filePath.FullName);
